@@ -10,19 +10,19 @@
       </div>
     </div>
     <div
-      class="grid grid-cols-5 pt-[68px] gap-10"
+      class="grid grid-cols-4 pt-[68px] gap-14"
       v-if="$store.state.getProducts.foods.length"
     >
       <div
         v-for="item in $store.state.getProducts.foods"
-        class="flex flex-col p-3 gap-2 h-full items-center shadow justify-end bg-[#1F1D2B] w-[192px] h-[228px] relative rounded-2xl"
+        class="flex flex-col p-3 gap-2 h-full items-center shadow justify-end bg-[#1F1D2B] w-[242px] h-[238px] relative rounded-2xl"
       >
         <img
           :src="item.strMealThumb"
           alt="img"
-          class="rounded-full w-[140px] h-[140px] absolute -top-9 left-[25px]"
+          class="rounded-full w-[140px] h-[140px] absolute -top-9 left-[50px]"
         />
-        <h1 class="text-[14px] font-medium w-2/3 text-center">
+        <h1 class="text-[14px] font-medium text-center">
           {{ item.strMeal }}
         </h1>
         <p class="text-[14px] font-normal">$ 2.23</p>
