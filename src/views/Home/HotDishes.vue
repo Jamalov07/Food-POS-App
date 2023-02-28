@@ -15,7 +15,7 @@
     >
       <div
         v-for="item in $store.state.getProducts.foods"
-        class="flex flex-col p-3 gap-2 h-full items-center shadow justify-end bg-[#1F1D2B] w-[242px] h-[238px] relative rounded-2xl"
+        class="flex flex-col p-3 gap-2 items-center shadow justify-end bg-[#1F1D2B] w-[242px] h-[238px] relative rounded-2xl"
       >
         <img
           :src="item.strMealThumb"
